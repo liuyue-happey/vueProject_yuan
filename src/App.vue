@@ -4,19 +4,15 @@
   </div>
 </template>
 
-<script>
+<script> 
 export default {
   name: "App",
   data() {
-    return {
-      msg: "我是App.vue组件",
-      radio: "1"
-    };
+    return {};
   }
 };
 </script>
-  
-<style>
+<style lang="less">
 * {
   padding: 0%;
   margin: 0%;
