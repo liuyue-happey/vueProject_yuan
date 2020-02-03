@@ -21,12 +21,12 @@
             <el-col :span="24">
               <el-menu
                 :router="true"
-                default-active="2"
+                default-active="/index/user"
                 class="el-menu-vertical-demo"
                 @open="handleOpen"
                 @close="handleClose"
               >
-                <el-menu-item index="/index/user">
+                <el-menu-item index="/index/user" >
                   <i class="el-icon-location"></i>
                   用户管理
                 </el-menu-item>

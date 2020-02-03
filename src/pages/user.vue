@@ -1,17 +1,15 @@
 
 <template>
-    <div id="user">
-        我是一个div
-    </div>
+  <div id="user">
+      user
+  </div>
 </template>
 <script>
 export default {
-    data(){
-        return{
-            
-        }
-    }
-}
+  data() {
+    return {};user
+  }
+};
 </script> 
 <style lang="less" scoped>
 
