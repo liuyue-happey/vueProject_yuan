@@ -25,60 +25,61 @@ export default new Router({
       name: 'index',
       path: '/index',
       component: index,
+      redirect:'/index/user',
       children: [
         {
           name: 'active',
-          path: '/active',
+          path: 'active',
           component: active,
         },
         {
           name: 'change',
-          path: '/change',
+          path: 'change',
           component: change,
         },
         {
           name: 'check',
-          path: '/check',
+          path: 'check',
           component: check,
         },
         {
           name: 'message',
-          path: '/message',
+          path: 'message',
           component: message,
         },
         {
           name: 'num',
-          path: '/num',
+          path: 'num',
           component: num,
         },
         {
           name: 'order',
-          path: '/order',
+          path: 'order',
           component: order,
         },
         {
           name: 'organization',
-          path: '/organization',
+          path: 'organization',
           component: organization,
         },
         {
           name: 'shop',
-          path: '/shop',
+          path: 'shop',
           component: shop,
         },
         {
           name: 'system',
-          path: '/system',
+          path: 'system',
           component: system,
         },
         {
           name: 'user',
-          path: '/user',
+          path: 'user',
           component: user,
         },
         {
           name: 'volunteer',
-          path: '/volunteer',
+          path: 'volunteer',
           component: volunteer,
         },
       ]

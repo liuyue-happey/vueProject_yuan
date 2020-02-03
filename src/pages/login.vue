@@ -37,7 +37,7 @@ export default {
       } else {
         //   如果登陆成功的话 我们就需要跳转到系统页面
         // this.$router.push()   路由跳转
-        this.$router.push({ path: "/index" });
+        this.$router.push({ path: "/index/user"});
       }
     }
   }

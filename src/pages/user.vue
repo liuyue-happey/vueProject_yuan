@@ -1,11 +1,12 @@
 
 <template>
-    <div id="user">user</div>
+    <div id="user">
+        我是一个div
+    </div>
 </template>
 <script>
 export default {
     data(){
-
         return{
             
         }

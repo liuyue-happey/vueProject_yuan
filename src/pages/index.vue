@@ -26,38 +26,38 @@
                 @open="handleOpen"
                 @close="handleClose"
               >
-                <el-menu-item index="/user">
+                <el-menu-item index="/index/user">
                   <i class="el-icon-location"></i>
                   用户管理
                 </el-menu-item>
-                <el-menu-item index="/organization">
+                <el-menu-item index="/index/organization">
                   <i class="el-icon-location"></i>组织管理
                 </el-menu-item>
-                <el-menu-item index="/active">
+                <el-menu-item index="/index/active">
                   <i class="el-icon-location"></i>活动管理
                 </el-menu-item>
-                <el-menu-item index="/shop">
+                <el-menu-item index="/index/shop">
                   <i class="el-icon-location"></i>商品管理
                 </el-menu-item>
-                <el-menu-item index="/change">
+                <el-menu-item index="/index/change">
                   <i class="el-icon-location"></i>兑换管理
                 </el-menu-item>
-                <el-menu-item index="/check">
+                <el-menu-item index="/index/check">
                   <i class="el-icon-location"></i>审核管理
                 </el-menu-item>
-                <el-menu-item index="/num">
+                <el-menu-item index="/index/num">
                   <i class="el-icon-location"></i>积分管理
                 </el-menu-item>
-                <el-menu-item index="/message">
+                <el-menu-item index="/index/message">
                   <i class="el-icon-location"></i>留言反馈
                 </el-menu-item>
-                <el-menu-item index="/system">
+                <el-menu-item index="/index/system">
                   <i class="el-icon-location"></i>系统设置
                 </el-menu-item>
-                <el-menu-item index="/order">
+                <el-menu-item index="/index/order">
                   <i class="el-icon-location"></i>老人信息管理
                 </el-menu-item>
-                <el-menu-item index="/volunteer">
+                <el-menu-item index="/index/volunteer">
                   <i class="el-icon-location"></i>志愿者信息
                 </el-menu-item>
               </el-menu>
@@ -97,6 +97,7 @@ export default {
   height: 45px;
   line-height: 45px;
 }
+/deep/.el-main{padding:0}
 .el-header {
   background-color: rgb(255, 131, 20);
   line-height: 50px;

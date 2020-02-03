@@ -1,7 +1,7 @@
 
 <template>
     <div id="organization">
-        组织管理
+        organization
     </div>
 </template>
 <script>
