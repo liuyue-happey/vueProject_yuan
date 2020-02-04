@@ -43,12 +43,15 @@
 </template>
 <script>
 export default {
-  data() {
+  data:function(){
     return {
         form:{
-            name:''
+            name:'',
         }
     };
+  },
+  methods:{
+      
   }
 };
 </script>
