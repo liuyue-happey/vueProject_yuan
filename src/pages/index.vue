@@ -111,4 +111,7 @@ export default {
     margin-right: 5px;
   }
 }
+.el-main{
+  background-color: rgb(240, 240, 240)
+}
 </style>
