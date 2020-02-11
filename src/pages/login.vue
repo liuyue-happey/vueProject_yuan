@@ -5,11 +5,12 @@
     <div class="formBox">
       <el-input v-model="userName" class="mt20 mb20" placeholder="请输入账号"></el-input>
       <el-input v-model="password" placeholder="请输入密码"></el-input>
-      <el-button type="primary" style="margin-top:10px;width:100%;" @click="login">登陆</el-button>
+      <el-button type="primary" style="margin-top:10px;width:100%;" @click="loginBtn">登陆</el-button>
     </div>
   </div>
 </template>
 <script>
+import { login } from "../http/index.js";
 export default {
   data() {
     return {
@@ -18,7 +19,7 @@ export default {
     };
   },
   methods: {
-    login() {
+    loginBtn() {
       //   trim()  去掉两边的 空格
       if (this.userName.trim() == "") {
         this.$message({
@@ -37,7 +38,26 @@ export default {
       } else {
         //   如果登陆成功的话 我们就需要跳转到系统页面
         // this.$router.push()   路由跳转
-        this.$router.push({ path: "/index/user"});
+        let data = {
+          username: this.userName,
+          password: this.password
+        };
+        login(data).then(res => {
+          if (res.status == 200) {
+            this.$store.dispatch("setName", res.data.nickname);
+            this.$store.dispatch("setToken", res.data.admin_token);
+            localStorage["nickname"] = res.data.nickname;
+            localStorage["admin_token"] = res.data.admin_token;
+            this.$router.push({ path: "/index/user" });
+          }else{
+            this.$message({
+            showClose: true,
+            message: "登陆失败",
+            type: "warning"
+        });
+
+          }
+        });
       }
     }
   }

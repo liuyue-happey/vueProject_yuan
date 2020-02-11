@@ -14,7 +14,10 @@ import shop from '@/pages/shop'
 import system from '@/pages/system'
 import user from '@/pages/user'
 import volunteer from '@/pages/volunteers'
-Vue.use(Router)
+
+Vue.use(Router);
+
+
 export default new Router({
   routes: [
     {
@@ -25,7 +28,7 @@ export default new Router({
       name: 'index',
       path: '/index',
       component: index,
-      redirect:'/index/user',
+      redirect: '/index/user',
       children: [
         {
           name: 'active',
@@ -86,3 +89,4 @@ export default new Router({
     }
   ]
 })
+
